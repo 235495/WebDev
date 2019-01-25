@@ -1,34 +1,41 @@
 <html lang="en">
-<!--Version 3.0 
+<!--Version 7.0 
 	Name: Dylan Neubauer
-	Date Completed: 9.26.18
+	Date Completed: 
  -->
 <head>
-<script src="JS/webDevUser17_script.js"></script>
 <link href="CSS/WebDevUser17.css" rel="stylesheet" type="text/css">
-<title> Web Development User #17 </title>
+<title> Web Development User #17: Games and Apps </title>
+<meta charset=utf-8>
+<title>Slides and Structure</title>
+<style>
+button {
+    position: absolute;
+    left: 74%;
+    top: 55%; 
+}
+
+#textchangeButton {
+    position: absolute;
+    left: 60%;
+    top: 55%; 
+}
+</style>
 </head>
 <body>
 <!-- webpage content goes here in the body -->
         <div id="page">
-                <div id="logo">
-                        <h1><a href="/" id="logoLink">My First Website</a></h1>
+                <div id="title">
+                        <h1><a>My First Website 1.7</a></h1>
                 </div>
                 <div id="nav">
                         <center>
                                     <h3><a href="WebDevUser17.html">Home</a></h3>
-                                    <h3><a href="WebDevUser17_AboutMe.html">About</a></h3>
-                                    <h3><a href="#/contact.html">Contact</a></h3>   
-                        </center>  
+                                    <h3><a href="WebDevUser17_About.html">Brief History of the Computer</a></h3>
+                                    <h3><a href="WebDevUser17_Games.html">Games and Apps</a></h3>
+                                    <h3><a href="WebDevUser17_Contact.html">Contact</a></h3>   
+                        </center>
                 </div>
-                <div id="content">
-                        <h1>Home</h1>
-                        <p>
-                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-                        </p>
-                        <p>
-                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
-                        </p>
                         <button type="button"
                                 style="background-color:gray;" onClick="alert('GO Sabers!');" >Click Me!</button>
                                 
@@ -146,11 +153,11 @@ Change background color in:
 <option>cornflowerblue
 <option>darkolivegreen
 </select>
-<input type="button" value="Start" onClick="startit()" onCLick()="challenge()">
+<input type="button" value="Start" onClick="startit()">
 <input type="button" value="Stop" onClick="stopTest()">
-</form></p>
-<center><p id="challenge"> Challenge Inactive</p></center>
+</form>
 <p><form name="count">
+Countdown to trip to Germany and Austria
 <input type="text" size="69" name="count2" readonly="readonly">
 </form>
 
@@ -196,31 +203,20 @@ setTimeout("countdown(theyear,themonth,theday)",1000)
 }
 //enter the count down date using the format year/month/day
 countdown(2018,10,16)
-</script></p>
+</script>
                 </div>
-                <div id="footer">
-                    <center> <img src=images/user17/cro.jpg alt="Cro, German Rapper"> </center> 
-<h2>My Top 5 Favorite Songs</h2>
- <table>
- <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
- <tr><td>1</td><td>Cro</td><td>10419</td></tr>
- <tr><td>2</td><td>Bausa</td><td>Danke</td></tr>
- <tr><td>3</td><td>Alpa Gun</td><td>Immernoch Ausländer</td></tr>
- <tr><td>4</td><td>Cro</td><td>Du</td></tr>
- <tr><td>5</td><td>BRKN</td><td>Song über Irgendwas</td></tr>
- </table>
-                    <h1>Berlin, Berlin</h1>
-                    <h2>Berlin, Berlin</h2>
-                    <h3>Berlin, Berlin</h3>
-                    <h4>Du bist meine Stadt, du bist mein...</h4>
-                    <h5>Berlin, Berlin</h5>
-                    <h6>Berlin von Alpa Gun</h6>
-                </div>
-        </div>
-</body>
-<body>
-<center> My name is Dylan Neubauer</center>
-<center><p id="textChange"> My name is User 17</p></center>
-<button type="button" onclick="changeText()">Click if you like my Webpage</button>
+<center><p id="textChange"> </p></center>
+<button type="button" id="textchangeButton" onclick="changeText()">Click if you like my Webpage</button>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

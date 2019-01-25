@@ -1,0 +1,96 @@
+<html lang="en">
+<!--Version 7.0 
+	Name: Dylan Neubauer
+	Date Completed:
+ -->
+<head>
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<title> Web Development User #17: Brief History of the Computer </title>
+</head>
+<body>
+<!-- webpage content goes here in the body -->
+        <div id="page">
+                <div id="title">
+                        <h1><a>My First Website 1.7</a></h1>
+                </div>
+                <div id="nav">
+                        <center>
+                                    <h3><a href="WebDevUser17.html">Home</a></h3>
+                                    <h3><a href="WebDevUser17_About.html">Brief History of the Computer</a></h3>
+                                    <h3><a href="WebDevUser17_Games.html">Games and Apps</a></h3>
+                                    <h3><a href="WebDevUser17_Contact.html">Contact</a></h3>   
+                        </center>
+                </div>
+                <div id="content">
+                        <article>
+	<h1>
+        <span class="blinking">A Brief History of the Computer</span> <class=co><img src=images/user17/compute.jpeg align= "right"> </span>
+    </h1>
+	<p>
+		<h2>
+            The First Generation of Computers
+        </h2>
+	</p>
+	<p>
+		In 1943, the British completed a secret code-breaking computer called Colossus to decode German messages. The Colossus's impact on the development of the computer industry was rather limited for two important reasons. First, <span class=co>Colossus was not a general-purpose computer; it was only designed to decode secret messages</span>. Second, the existence of the machine was kept secret until decades after the war.
+
+	</p>
+    <p>
+        <h2>
+            The 2nd Generation of Computers
+        </h2>
+    </p>
+	<p>
+		By 1948, the invention of <span class=co>The transistor greatly changed the computer's development</span>. The transistor replaced the large, cumbersome vacuum tube in televisions, radios and computers. As a result, the size of electronic machinery has been shrinking ever since. The transistor was at work in the computer by 1956.
+
+	</p>
+    <p>
+        <h2>
+            The 3rd Generation of Computers
+        </h2>
+    </p>
+	<p>
+		Transistors were clearly an improvement over the vacuum tube, they still generated a great deal of heat, which damaged the computer's sensitive internal parts. The quartz rock eliminated this problem. <span class=co>Jack Kilby, an engineer with Texas Instruments, developed the integrated circuit in 1958</span>. The Integrated circuit combined three electronic components onto a small silicon disc, which was made from quartz. Scientists later managed to fit even more components on a single chip, called a semiconductor. As a result, computers became ever smaller as more components were squeezed onto the chip. Another third-generation development included the use of an operating system that allowed machines to run many different programs at once with a central                    program that monitored and coordinated the computer's memory.
+
+
+	</p>
+	<p>
+		<h2>
+            The 4th Generation of Computers(Current)
+        </h2>
+	</p>
+	<p>
+		Previously the integrated circuit had had to be manufactured to fit a special purpose, now one microprocessor could be manufactured and then programmed to meet any number of demands. Soon everyday household items such as microwave ovens, television sets and automobiles with electronic fuel injection incorporated microprocessors. By the mid-1970's, computer manufacturers sought to bring computers to general consumers. These minicomputers came complete with user-friendly software packages that offered even non-technical users an array of applications, most popularly word processing and spreadsheet programs. <span class=co>Pioneers in this field were Commodore, Radio Shack and Apple Computers</span>.
+        <p>
+            Whereas previously the integrated circuit had had to be manufactured to fit a special purpose, now one microprocessor could be manufactured and then programmed to meet any number of demands. Soon everyday household items such as microwave ovens, television sets and automobiles with electronic fuel injection incorporated microprocessors. <span class=co>By the mid-1970's, computer manufacturers sought to bring computers to general consumers</span>. These minicomputers came complete with user-friendly software packages that offered even non-technical users an array of applications, most popularly word processing and spreadsheet programs. Pioneers in this field were Commodore, Radio Shack and Apple Computers.
+        </p>
+        <p>
+            In the early 1980's, arcade video games such as Pac Man and home video game systems such as the Atari 2600 ignited consumer interest for more sophisticated, programmable home computers. In 1981, IBM introduced its personal computer (PC) for use in the home, office and schools. The 1980's saw an expansion in computer use in all three arenas as clones of the IBM PC made the personal computer even more affordable. <span class=co>In direct competition with IBM's PC was Apple's Macintosh line, introduced in 1984. Notable for its user-friendly design, the Macintosh offered an operating system that allowed users to move screen icons instead of typing instructions</span>. Users controlled the screen cursor using a mouse, a device that mimicked the movement of one's hand on the computer screen.
+        </p>
+	</p>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+
+	var co = $('article').find('span.co').each(function() {
+		var $this = $(this);
+
+		$('<blockquote></blockquote>', {
+			class: 'co',
+			text: $this.text()
+		}).prependTo( $this.closest('p') );
+		
+	});
+	
+
+})();
+
+</script>
+
+</article>

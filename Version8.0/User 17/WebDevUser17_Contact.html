@@ -1,0 +1,156 @@
+<html lang="en">
+<!--Version 8.0 
+	Name: Dylan Neubauer
+	Date Completed: 
+ -->
+<head>
+<link href="CSS/WebDevUser17.css" rel="stylesheet" type="text/css">
+<title> Web Development User #17: Contact Us </title>
+<meta charset=utf-8>
+<title>Slides and Structure</title>
+<style>
+button {
+    position: relative;
+    left: 74%;
+    top: 60%; 
+}    
+</style>
+</head>
+<body>
+<!-- webpage content goes here in the body -->
+        <div id="page">
+                <div id="title">
+                        <h1><a>My First Website 1.8</a></h1>
+                </div>
+                <div id="signin">
+                    <a href="WebDevUser17_Signin.html">Back to login</a>
+                </div>
+                <div id="nav">
+                        <center>
+                                    <h3><a href="WebDevUser17.html">Home</a></h3>
+                                    <h3><a href="WebDevUser17_About.html">Brief History of the Computer</a></h3>
+                                    <h3><a href="WebDevUser17_Games.html">Games and Apps</a></h3>
+                                    <h3><a href="WebDevUser17_Php.html">Examples of PHP</a></h3>
+                                    <h3><a href="WebDevUser17_Contact.html">Contact</a></h3>   
+                        </center>
+                </div>
+<article>
+	<center><h3>Click the button to contact the developers.</h3></center>
+</article>
+<div id="contact">
+	<h2>Contact User 17</h2>
+	<form action="#">
+		<div class="column">
+                        <div class="box1">
+                                <div id="form-outer">
+                                        <div id="frm-contact2">
+                                                <div>
+                                                        <input type="text" name="userName" id="userName" class="demoInputBox" PlaceHolder="Name">
+                                                </div>
+                                                <div>
+                                                        <input type="text" name="userEmail" id="userEmail" class="demoInputBox" PlaceHolder="Email">
+                                                </div>
+                                                <div>
+                                                        <input type="text" name="subject" id="subject" class="demoInputBox" PlaceHolder="Subject">
+                                                </div>
+                                                <div>
+                                                        <textarea name="content" id="content" class="demoInputBox" rows="3" PlaceHolder="Content"></textarea>
+                                                </div>
+                                                <div id="mail-status">
+                                                        <button name="submit" class="btnAction" onclick="sendContact();">Send</button>
+                                                </div>
+                                        </div>
+                                        <div id="btn-contact"><h2>Contact Other Users</div>
+                                </div>
+                        </div>
+                        <div class="column">
+                                <div class="box2">
+                                        <div id="form-outer">
+                                                <div id="frm-contact2">
+                                                        <div>
+                                                                <input type="text" name="userName" id="userName" class="demoInputBox" PlaceHolder="Name">
+                                                        </div>
+                                                        <div>
+                                                                <input type="text" name="userEmail" id="userEmail" class="demoInputBox" PlaceHolder="Email">
+                                                        </div>
+                                                        <div>
+                                                                <input type="text" name="subject" id="subject" class="demoInputBox" PlaceHolder="Subject">
+                                                        </div>
+                                                        <div>
+                                                                <textarea name="content" id="content" class="demoInputBox" rows="3" PlaceHolder="Content"></textarea>
+                                                        </div>
+                                                        <div id="mail-status">
+                                                                <button name="submit" class="btnAction" onclick="sendContact();">Send</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                
+                        </div>
+</div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+$('html').addClass('js');
+
+var contactForm = {
+
+	container: $('#contact'),
+
+	config: {
+		effect: 'slideToggle',
+		speed: 500
+	},
+
+	init: function(config) {
+		$.extend(this.config, config);
+
+		$('<button></button>', {
+			text: 'Contact Me'
+		})
+			.insertAfter( 'article:first' )
+			.on( 'click', this.show );
+	},
+
+	show: function() {
+		var cf = contactForm,
+			container = cf.container,
+			config = cf.config;
+
+		if ( container.is(':hidden') ) {
+			contactForm.close.call(container);
+			container[config.effect](config.speed);
+		}
+	},
+
+	close: function() {
+		var $this = $(this), // #contact
+			config = contactForm.config;
+
+		if ( $this.find('span.close').length ) return;
+
+		$('<span class=close>X</span>')
+			.prependTo(this)
+			.on('click', function() {
+				// this = span
+				$this[config.effect](config.speed);
+			})
+	}
+};
+
+contactForm.init({
+	// effect: 'fadeToggle',
+	speed: 300
+});
+
+})();
+
+</script>
+</div>
+</body>
+</html>

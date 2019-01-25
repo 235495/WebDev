@@ -1,0 +1,45 @@
+#title {
+    font-size: 1.5em;
+    text-align: center;    
+}
+
+body {
+background-color: black;
+color: lawngreen;
+}
+
+a {
+   color: lawngreen;
+}
+
+h1 { 
+    font-size: 1.5em;
+    text-align: center;
+}
+h2 { font-size: 1.3em;}
+
+article {
+        width: 600px;
+		margin: auto;
+    
+        font-family: monospace
+	}
+
+blockquote.co {
+		float: right;
+		background-color: darkslategrey;
+		font-size: 1em;
+		width: 35%;
+		text-align: center;
+	}
+.blinking{
+    animation:blinkingText 1.5s infinite;
+}
+
+@keyframes blinkingText{
+    0%{     color: lawngreen; }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: lawngreen;    }
+}
